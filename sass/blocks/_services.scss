@@ -1,0 +1,227 @@
+.services {
+    padding: 100px 0;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        column-gap: 196px;
+    }
+
+    &__description {
+        max-width: 444px;
+    }
+
+    span {
+        margin: 0 0 0 35px;
+        display: inline-block;
+        width: 245px;
+        height: 2px;
+        background: #78C081;
+        border-radius: 1.5px;
+        vertical-align: middle;
+    }
+
+    &__text {
+        display: grid;
+        gap: 35px;
+        margin-top: 22px;
+    }
+
+    &__options {
+        position: relative;
+
+        &-buttons-wrapper {
+            position: absolute;
+            top: 43%;
+            left: -287px;
+            max-width: 486px;
+            display: flex;
+            border: 10px solid $accent-color-light-green;
+            border-bottom: none;
+            border-radius: 45px 45px 0 0;
+            overflow: hidden;
+            transform: rotate(-90deg);
+        }
+
+        &-button {
+            width: 233px;
+            padding: 24px 25px;
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            background: #FFFFFF;
+            font-size: 14px;
+            color: $accent-color-grey;
+
+            &:hover {
+                background: inherit;
+                box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36);
+            }
+
+            svg,
+            path {
+                fill: #7CA281;
+            }
+        }
+
+        #options-button-left {
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+
+        &-button_active {
+            background: $accent-color-active;
+            box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36);
+            color: #FFFFFF;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                background: $accent-color-hover;
+            }
+
+            svg,
+            path {
+                fill: white;
+            }
+        }
+
+        &-info-block {
+            width: 676px;
+            max-height: 655px;
+            background: $accent-color-light-green;
+            border-radius: 65px 0px 0px 65px;
+        }
+
+        &-blocks-wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+        }
+
+        &-list {
+            max-width: 416px;
+            padding: 0 40px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
+
+        li+li {
+            margin-top: 20px;
+        }
+
+        &-list-item {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        &-img {
+            img {
+                filter: drop-shadow(-4px 0px 8px rgba(15, 44, 15, 0.35));
+                border-radius: 65px 0px 0px 65px;
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:$md) {
+    .services {
+        padding: 70px 0;
+
+        .container {
+            padding: 0;
+        }
+
+        &__content {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &__description {
+            max-width: 319px;
+            padding: 0 10px;
+        }
+
+        span {
+            width: 160px;
+            margin: 0 0 0 15px;
+        }
+
+        &__text {
+            gap: 28px;
+        }
+
+        &__options {
+            width: 100%;
+
+            &-buttons-wrapper {
+                max-width: unset;
+                position: static;
+                border: 15px solid #D9FADD;
+                border-bottom: none;
+                transform: unset;
+            }
+
+            &-button {
+                width: 100%;
+                padding: 24px 19px;
+                display: block;
+
+                svg {
+                    display: none;
+                }
+            }
+
+            &-info-block {
+                width: unset;
+                max-width: unset;
+                max-height: unset;
+                border-radius: 0 0 50px 50px;
+            }
+
+            &-blocks-wrapper {
+                flex-direction: column;
+                row-gap: 20px;
+                column-gap: unset;
+            }
+
+            &-list {
+                padding: 25px 29px 0;
+            }
+
+            & li+li {
+                margin-top: 13px;
+            }
+
+            &-list-item {
+                font-size: 16px;
+                line-height: 1.62;
+            }
+
+            &-img {
+                padding: 0 15px 15px;
+
+                img {
+                    filter: drop-shadow(0px -4px 8px rgba(15, 44, 15, 0.35));
+                    border-radius: 50px;
+                }
+
+                &-desktop {
+                    display: none;
+                }
+
+                &-mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+}

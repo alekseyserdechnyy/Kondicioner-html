@@ -1,0 +1,45 @@
+.text {
+    line-height: 1.5;
+    color: $accent-color;
+}
+
+.general-text {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    color: $accent-color-grey;
+}
+
+a {
+    color: $accent-color-grey;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $accent-color-disabled;
+    }
+}
+
+.general-title {
+    font-family: 'Ruberoid Semi', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.33;
+    text-transform: capitalize;
+    color: $accent-color-grey;
+}
+
+@media (max-width: $md) {
+    .general-title {
+        font-family: 'Ruberoid', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.36;
+    }
+
+    .general-text {
+        font-family: 'Proxima Nova Rg', sans-serif;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $accent-color-grey;
+    }
+}

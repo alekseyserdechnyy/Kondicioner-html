@@ -1,0 +1,27 @@
+// Fonts
+@import "./../fonts/ProximaNova/stylesheet.css";
+@import "./../fonts/Ruberoid/stylesheet.css";
+
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/general";
+@import "./base/buttons";
+@import "./base/forms-feedback";
+
+
+// Blocks
+@import "./blocks/nav";
+@import "./blocks/header";
+@import "./blocks/services";
+@import "./blocks/price";
+
+
+
+// Font Family
+// font-family: 'Proxima Nova Rg', sans-serif; - 400, 700
+// font-family: 'Proxima Nova Lt', sans-serif; - 600
+
+// font-family: 'Ruberoid', sans-serif; - 300, 400, 500, 700
+// font-family: 'Ruberoid Semi', sans-serif; - 600

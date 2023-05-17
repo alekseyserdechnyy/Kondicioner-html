@@ -1,0 +1,135 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 250, 221, 0.55);
+    backdrop-filter: blur(10px);
+
+    &.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-wrapper {
+        max-width: 445px;
+    }
+
+    .button-form-close-wrapper {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__form {
+        background: #D9FADD;
+        box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    &__title {
+        padding: 35px 50px 20px 35px;
+        font-family: 'Ruberoid Semi', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.38;
+        text-transform: capitalize;
+        color: $accent-color-grey;
+
+        span {
+            display: inline-block;
+            width: 136px;
+            height: 2px;
+            margin-left: 22px;
+            background: $accent-color;
+            border-radius: 1.5px;
+            vertical-align: middle;
+        }
+    }
+
+    &__form-content {
+        padding: 35px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+        border-radius: 35px 35px 50px 50px;
+    }
+
+    &__working-hours-wrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        font-family: 'Proxima Nova Lt', sans-serif;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &__working-hours {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    &__phone-wrapper {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        font-family: 'Proxima Nova Lt', sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    &__line {
+        display: inline-block;
+        width: 39px;
+        height: 1px;
+        background: $accent-color-disabled;
+        border-radius: 0.5px;
+        transform: rotate(90deg);
+    }
+
+    &__form-title {
+        max-width: 432px;
+    }
+
+    form>* {
+        width: 100%;
+    }
+
+    input {
+        padding: 15px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
+        border-radius: 15px;
+
+        &::placeholder {
+            font-family: 'Proxima Nova Rg', sans-serif;
+            font-size: 17px;
+            line-height: 1;
+            color: $accent-color;
+        }
+    }
+
+    input+input {
+        margin-top: 20px;
+    }
+
+    &__form-logo {
+        padding: 15px 0;
+        text-align: center;
+
+        img {
+            width: 228px;
+            height: 68px;
+        }
+    }
+
+}
