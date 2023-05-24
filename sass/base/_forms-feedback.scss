@@ -5,6 +5,7 @@
     height: 100%;
     background: rgba(217, 250, 221, 0.55);
     backdrop-filter: blur(10px);
+    z-index: 9999;
 
     &.open {
         display: flex;

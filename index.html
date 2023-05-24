@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    <header class="header" id="header">
+    <header class="header " id="header">
 
         <div class="modal open0">
             
-            <div class="modal__form-wrapper">
+            <div class="modal__form-wrapper none">
                 <div class="button-form-close-wrapper">
                     <button class="button-form-close">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@
                 </div>                
             </div>
 
-            <div class="modal__form-wrapper none">
+            <div class="modal__form-wrapper ">
                 <div class="button-form-close-wrapper">
                     <button class="button-form-close">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +266,7 @@
     
     </header>
 
-    <section class="services">
+    <section class="services ">
         <div class="container">
 
             <div class="services__content">
@@ -401,7 +401,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price ">
         <div class="container">
 
             <div class="price__content">
@@ -523,7 +523,7 @@
         </div>
     </section>
 
-    <section class="application">
+    <section class="application ">
         <div class="container">
 
             <div class="application__content">
@@ -586,7 +586,27 @@
 
     <section class="form-application">
         <div class="container">
-            
+            <div class="form-application__content">
+                <div class="form-application__title-wrapper">
+                    <h3 class="form-application__title">Оставьте заявку и мы с вами свяжемся</h3>
+                </div>
+
+                <div class="form-application__wrapper">
+                    <form>
+                        <div class="form-application__input-wrapper">
+                            <input type="text" placeholder="Ваше Имя" required>
+                            <div class="form-application__input-error none">Номер не корректный</div>
+                        </div>
+
+                        <div class="form-application__input-wrapper">
+                            <input type="text" placeholder="Номер телефона" required>
+                            <div class="form-application__input-error none">Номер не корректный</div>
+                        </div>
+                        
+                        <button type="submit" class="button button_small" disabled>отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     
