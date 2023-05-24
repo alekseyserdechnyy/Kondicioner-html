@@ -1,7 +1,16 @@
 .nav {
+    width: 100%;
     padding: 20px 0;
-    background-color: #D9FADD;
+    background-color: transparent;
     border-radius: 0px 0px 70px 70px;
+
+    &_fixed {
+        position: fixed;
+        top: 0;
+        background: $accent-color-light-green;
+        border-radius: 0px 0px 70px 70px;
+        z-index: 999;
+    }
 
     &-row {
         display: flex;
@@ -31,7 +40,7 @@
     }
 }
 
-@media (max-width: $md) {
+@media (max-width: $lg) {
     .nav {
 
         .container-nav {
