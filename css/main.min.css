@@ -260,3 +260,30 @@ button:hover{background:#54e165}
 .form-application__wrapper button.button{max-width:unset}
 .form-application__input-wrapper{width:100%}
 }
+.about-us{padding:100px 0}
+.about-us__content{display:flex;align-items:center;gap:79px}
+.about-us__desc{position:relative;padding:0 44px;background:#fff;box-shadow:0 0 10px rgba(73,93,76,.1);border-radius:50px}
+.about-us__desc::before{content:"";width:656px;height:499px;position:absolute;top:3%;left:-35%;background:#baffc3;opacity:.5;filter:blur(100px);z-index:-1}
+.about-us__desc-wrapper{max-width:442px;margin:0 auto;padding:33px 0}
+.about-us__desc-title-item:nth-child(1){display:flex;align-items:center;column-gap:15px}
+.about-us__desc-title-item+.about-us__desc-title-item{margin-top:10px}
+.about-us__desc-site-name{font-family:Ruberoid,sans-serif;font-size:21px;text-transform:uppercase;color:#78c081;line-height:unset;border-bottom:1px solid #78c081}
+.about-us__desc-text{margin-top:20px;display:flex;flex-direction:column;row-gap:27px}
+.about-us__desc-text span{font-family:'Proxima Nova Lt',sans-serif;font-weight:600}
+.about-us__features{max-width:561px;display:flex;gap:90px;flex-wrap:wrap}
+.about-us__features-item{position:relative;max-width:237px}
+.about-us__features-item::before{content:"";width:122px;height:122px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#baffc3;opacity:.5;filter:blur(50px);z-index:-1}
+.about-us__features-title{font-family:'Ruberoid Semi',sans-serif;font-weight:600;font-size:26px;line-height:unset;color:#78c081}
+.about-us__features-title span{font-size:35px;line-height:unset}
+.about-us__features-text-wrapper{margin-top:15px}
+.about-us__features-text-wrapper p{max-width:198px;margin:0 auto;text-align:center}
+@media (max-width:1024px){
+.about-us{padding:70px 0}
+.about-us__content{flex-direction:column;gap:32px}
+.about-us__desc{padding:0 25px}
+.about-us__desc-wrapper{max-width:270px;padding:35px 0 25px}
+.about-us__desc-title-item:nth-child(1){column-gap:10px}
+.about-us__desc-title-item+.about-us__desc-title-item{margin-top:5px}
+.about-us__desc-site-name{font-size:15px}
+.about-us__desc-text{margin-top:25px;row-gap:23px}
+}
