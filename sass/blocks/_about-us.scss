@@ -130,6 +130,15 @@
         &__desc {
             padding: 0 25px;
 
+            &::before {
+                width: 508px;
+                height: 387px;
+                top: 8%;
+                left: 50%;
+                transform: translate(-50%);
+                filter: blur(85px);
+            }
+
             &-wrapper {
                 max-width: 270px;
                 padding: 35px 0 25px;
@@ -153,6 +162,29 @@
             &-text {
                 margin-top: 25px;
                 row-gap: 23px;
+            }
+        }
+
+        &__features {
+            max-width: 400px;
+            width: 100%;
+            flex-direction: column;
+            gap: 30px;
+
+            &-item:nth-child(n+2):nth-child(-n+3) {
+                align-self: flex-end;
+            }
+
+            &-item:nth-child(3) {
+                order: 4;
+            }
+
+            &-text-wrapper {
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.62;
+                }
             }
         }
     }

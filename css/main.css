@@ -1351,6 +1351,14 @@ button:hover {
   .about-us__desc {
     padding: 0 25px;
   }
+  .about-us__desc::before {
+    width: 508px;
+    height: 387px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: blur(85px);
+  }
   .about-us__desc-wrapper {
     max-width: 270px;
     padding: 35px 0 25px;
@@ -1367,6 +1375,22 @@ button:hover {
   .about-us__desc-text {
     margin-top: 25px;
     row-gap: 23px;
+  }
+  .about-us__features {
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-us__features-item:nth-child(n+2):nth-child(-n+3) {
+    align-self: flex-end;
+  }
+  .about-us__features-item:nth-child(3) {
+    order: 4;
+  }
+  .about-us__features-text-wrapper p {
+    font-size: 16px;
+    line-height: 1.62;
   }
 }
 
