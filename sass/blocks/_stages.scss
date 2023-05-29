@@ -1,0 +1,7 @@
+.stages {
+    padding: 0 0 100px;
+
+    &__content>*+* {
+        margin-top: 15px;
+    }
+}
