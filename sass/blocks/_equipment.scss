@@ -1,0 +1,21 @@
+.equipment {
+    padding: 0 0 100px;
+
+    &__text-wrapper {
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        gap: 135px;
+    }
+
+    &__title-wrapper {
+        max-width: 394px;
+    }
+
+    &__desc-wrapper {
+        max-width: 641px;
+    }
+}
