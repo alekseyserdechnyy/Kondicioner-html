@@ -78,3 +78,21 @@ button {
         padding: 18px 0;
     }
 }
+
+.button-scroll {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    background: #5CCD6A;
+    box-shadow: inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+    border-radius: 23px;
+
+    &:disabled {
+        cursor: default;
+        background: #fff;
+        border: 6px solid rgba(237, 248, 238, 0.6);
+    }
+}
