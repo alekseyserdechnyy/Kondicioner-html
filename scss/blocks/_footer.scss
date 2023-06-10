@@ -1,0 +1,311 @@
+.footer {
+    padding: 86px 0 94px;
+    background: url(./../img/footer-bg.svg) no-repeat 0px 0px /cover;
+    border-top: 2px solid rgba(124, 162, 129, 0.29);
+
+    &__content {
+        display: flex;
+        gap: 120px;
+    }
+
+    &__logo-mobile {
+        display: none;
+
+        img {
+            width: 212px;
+            height: 65px;
+        }
+    }
+
+    &__desc {
+        max-width: 406px;
+    }
+
+    &__logo {
+        margin-bottom: 46px;
+        display: block;
+
+        img {
+            width: 352px;
+            height: 109px;
+        }
+    }
+
+    &__text {
+        margin: 0 0 36px;
+
+        p {
+            margin: 0 0 9px;
+            font-size: 14px;
+            line-height: 1.71;
+            color: $accent-color;
+        }
+
+        span {
+            font-family: 'Proxima Nova Lt', sans-serif;
+            font-weight: 600;
+        }
+
+        &-line {
+            border-bottom: 1px solid $accent-color;
+            border-radius: 1.5px;
+        }
+    }
+
+    &__slogan {
+        font-family: 'Ruberoid', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: normal;
+
+        span {
+            font-size: 22px;
+            color: $accent-color;
+        }
+    }
+
+    &__contacts {
+        max-width: 223px;
+        margin: 22px 0 0;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+
+        h3 {
+            font-family: 'Ruberoid', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: normal;
+        }
+    }
+
+    &__list-contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        &>* {
+            display: flex;
+            column-gap: 15px;
+        }
+    }
+
+    &__list-phone {
+        padding: 0 0 11px;
+        border-bottom: 1px solid #BEE1C2;
+        line-height: 1.5;
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    &__list-mail {
+        padding: 0 0 11px;
+        border-bottom: 1px solid #BEE1C2;
+        line-height: normal;
+
+        img {
+            width: 24px;
+            height: 18px;
+        }
+    }
+
+    &__list-working-hours {
+        font-size: 14px;
+        line-height: 1.43;
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    &__list-address {
+        font-size: 14px;
+        line-height: 1.43;
+
+        img {
+            width: 24px;
+            height: 31px;
+        }
+    }
+
+    &__form {
+        max-width: 290px;
+        margin: 22px 0 0;
+
+        input {
+            width: 100%;
+            padding: 16px 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: normal;
+            cursor: pointer;
+
+            &::placeholder {
+                color: $accent-color;
+            }
+        }
+
+        input+input {
+            margin-top: 20px;
+        }
+
+        &-button {
+            margin-top: 35px;
+
+            .button_small {
+                max-width: 229px;
+                padding: 17px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .footer {
+        padding: 46px 0 70px;
+        background: url(./../img/footer-bg.svg) no-repeat 54% 0px /cover;
+        border-top: 1px solid rgba(124, 162, 129, 0.29);
+
+        &__content {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__logo-mobile {
+            display: block;
+        }
+
+        &__desc {
+            order: 4;
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__text {
+            margin: 0 0 25px;
+
+            p {
+                margin: 0 0 25px;
+                font-size: 13px;
+                line-height: 1.77;
+            }
+        }
+
+        &__slogan {
+            font-size: 15px;
+
+            h4 {
+                max-width: 250px;
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        &__contacts {
+            max-width: 320px;
+            margin: 0;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+
+            h3 {
+                font-size: 22px;
+            }
+        }
+
+        &__list-contacts {
+            flex-direction: row;
+            column-gap: 33px;
+            flex-wrap: wrap;
+            font-size: 13px;
+
+            &>* {
+                column-gap: 13px;
+            }
+        }
+
+        &__list-phone {
+            padding: 0;
+            order: 2;
+            border-bottom: none;
+            line-height: normal;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+
+            &:nth-child(2) {
+                order: 3;
+            }
+        }
+
+        &__list-mail {
+            padding: 0;
+            order: 5;
+            border-bottom: none;
+
+            img {
+                width: 16px;
+                height: 13px;
+            }
+        }
+
+        &__list-working-hours {
+            max-width: 147px;
+            order: 1;
+            font-size: 13px;
+            line-height: 1.54;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &__list-address {
+            max-width: 147px;
+            order: 2;
+            font-size: 13px;
+            line-height: 1.54;
+
+            img {
+                width: 16px;
+                height: 20px;
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        &__form {
+            max-width: 319px;
+            margin: 0 0 10px;
+
+            &-button {
+                margin-top: 40px;
+
+                .button {
+                    border: 10px solid rgba(255, 255, 255, 0.7);
+                }
+
+                .button_small {
+                    max-width: 319px;
+                }
+            }
+        }
+    }
+}
